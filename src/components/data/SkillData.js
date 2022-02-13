@@ -1,19 +1,19 @@
-export const SillData = [
+export const SkillData = [
   {
     type: 'Frontend',
     list: [
-      { name: 'ReactJS', icon: <i class="devicon-react-original colored"></i> },
-      { name: 'ReactJS', icon: <i class="devicon-javascript-original colored"></i> },
-      { name: 'ReactJS', icon: <i class="devicon-typescript-original colored"></i> },
-      { name: 'ReactJS', icon: <i class="devicon-express-original-wordmark"></i> },
+      { name: 'React', icon: <i class="devicon-react-original colored"></i> },
+      { name: 'JavaScript', icon: <i class="devicon-javascript-plain colored"></i> },
+      { name: 'TypeScript', icon: <i class="devicon-typescript-original colored"></i> },
+      { name: 'Express.js', icon: <i class="devicon-express-original-wordmark"></i> },
     ],
   },
   {
     type: 'Backend',
     list: [
-      { name: 'ReactJS', icon: <i class="devicon-java-original colored"></i> },
-      { name: 'ReactJS', icon: <i class="devicon-nodejs-original colored"></i> },
-      { name: 'ReactJS', icon: <i class="devicon-csharp-original colored"></i> },
+      { name: 'Java', icon: <i class="devicon-java-plain colored"></i> },
+      { name: 'NodeJS', icon: <i class="devicon-nodejs-plain colored"></i> },
+      { name: 'C#', icon: <i class="devicon-csharp-plain colored"></i> },
     ],
   },
 ];
