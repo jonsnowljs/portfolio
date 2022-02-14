@@ -1,7 +1,7 @@
 import React from 'react';
 import Separator from '../../common/separator/Separator';
 import './Skill.css';
-import { SkillData } from '../../data/SkillData';
+import { SkillData } from '../../../assets/data/SkillData';
 import SkillCard from './SkillCard';
 function Skill() {
   const data = SkillData;

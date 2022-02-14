@@ -1,8 +1,7 @@
 import React from 'react'
 import './About.css'
-import avatar from '../../../assets/avatar.svg'
+import avatar from '../../../assets/img/avatar.svg'
 import SocialContents from '../../common/contacts/SocialContents'
-import Separator from '../../common/separator/Separator';
 
 function About() {
   return (
