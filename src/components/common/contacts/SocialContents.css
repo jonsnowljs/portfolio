@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .social-icon-div {
@@ -12,6 +13,10 @@
 
 .social-icon {
   height: 50px;
+}
+
+.archive-logo {
+  padding: 12px, 20px;
 }
 
 @media only screen and (max-width: 720px) {
