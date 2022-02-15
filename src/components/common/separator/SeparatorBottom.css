@@ -1,20 +1,11 @@
-.separator-container {
+.separator-bottom-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.separator {
+.separator-bottom {
   background-image: linear-gradient(
     to right,
-    #30a8a8,
-    #00a3be,
-    #008ee9,
-    #007cef,
-    #026ce8,
-    #165cdf,
-    #2e3fc4,
-    #3233b3,
-    #3326a2,
     #331992,
     #3326a2,
     #3233b3,
@@ -24,11 +15,21 @@
     #007cef,
     #008ee9,
     #00a3be,
-    #30a8a8
+    #30a8a8,
+    #00a3be,
+    #008ee9,
+    #007cef,
+    #026ce8,
+    #165cdf,
+    #2e3fc4,
+    #3233b3,
+    #3326a2,
+    #331992
   );
   height: 6px;
   width: 50%;
   border-radius: 3px;
   margin: 24px 0px;
+  transition: width 2s;
   opacity: 80%;
 }
