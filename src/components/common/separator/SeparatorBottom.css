@@ -32,4 +32,10 @@
   margin: 24px 0px;
   transition: width 2s;
   opacity: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.separator-bottom:hover {
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
