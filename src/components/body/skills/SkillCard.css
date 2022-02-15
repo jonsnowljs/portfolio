@@ -12,7 +12,8 @@
 }
 
 .skill-icon {
-  font-size: 80px;
+  height: 80px;
+  width: 80px;
 }
 .skill-name {
   font-size: 18px;
@@ -27,6 +28,7 @@
     margin: 3px;
   }
   .skill-icon {
-    font-size: 50px;
+    height: 50px;
+    width: 50px;
   }
 }

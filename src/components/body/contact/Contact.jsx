@@ -2,6 +2,8 @@ import React from 'react';
 import './Contact.css';
 import Separator from '../../common/separator/Separator';
 import SocialContacts from '../../common/contacts/SocialContents';
+import ReactDOM from 'react-dom';
+import Button from '@mui/material/Button';
 
 // Contact section
 function Contact() {
@@ -16,9 +18,12 @@ function Contact() {
         </div>
         <div className="download">
           {/* TODO update resume pdf*/}
+
           <a download href="../../../assets/resume.pdf">
             <i class="fi fi-rr-cloud-download download-icon"></i>
-            Download Resume
+            <Button variant="contained" color="primary">
+              Download Resume
+            </Button>
           </a>
         </div>
       </div>

@@ -12,7 +12,7 @@ function ProjectTimeline() {
     'linear-gradient( to bottom, #331992, #3326a2, #3233b3, #2e3fc4, #274bd5, #165cdf, #026ce8, #007cef, #008ee9, #009ad6, #00a3be, #30a8a8 )';
 
   return (
-    <VerticalTimeline lineColor={linearColor}>
+    <VerticalTimeline lineColor={linearColor} className='vertical-line' >
       <VerticalTimelineElement
         className="vertical-timeline-element--project"
         contentStyle={{

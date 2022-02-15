@@ -6,7 +6,7 @@ import ProjectTimeline from './ProjectTimeline'
 
 function Projects() {
   return (
-    <div>
+    <div className='projects'>
       <Separator />
       <ProjectTimeline/>
 

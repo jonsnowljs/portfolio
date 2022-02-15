@@ -4,9 +4,10 @@
   width: 60vw;
   position: absolute;
   top: -6px;
-  padding: 18px 12px;
+  padding: 18px 0px;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 
 .close-icon {
