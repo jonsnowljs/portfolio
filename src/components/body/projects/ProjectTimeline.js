@@ -12,7 +12,7 @@ function ProjectTimeline() {
     'linear-gradient( to bottom, #331992, #3326a2, #3233b3, #2e3fc4, #274bd5, #165cdf, #026ce8, #007cef, #008ee9, #009ad6, #00a3be, #30a8a8 )';
 
   return (
-    <VerticalTimeline lineColor={linearColor} className='vertical-line' >
+    <VerticalTimeline lineColor={linearColor} className="vertical-line">
       <VerticalTimelineElement
         className="vertical-timeline-element--project"
         contentStyle={{
@@ -30,7 +30,7 @@ function ProjectTimeline() {
           paddingTop: 5,
           backgroundColor: 'white',
         }}
-        icon={<ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} />}
+        icon={<ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} size={60}/>}
       >
         <h3 className="vertical-timeline-element-title">Test</h3>
         <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>

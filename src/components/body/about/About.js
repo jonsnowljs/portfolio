@@ -10,7 +10,7 @@ function About() {
       <div className="about-top">
         <div className="about-info">
           <Typist cursor={{ blink: true, element: '⌨️' }}>
-            Hello There👋, I am
+            Hi👋, I am
             <br /> <span className="info-name">Jiasheng Lu</span>
             <br />
             I'm a junior

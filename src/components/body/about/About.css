@@ -4,7 +4,8 @@
 
 .about-top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
+  padding: 0 10%;
   align-items: center;
 }
 

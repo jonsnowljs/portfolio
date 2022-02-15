@@ -1,5 +1,11 @@
 .body {
-   padding: 12px 0px;
+   padding: 0px;
    padding-bottom: 36px;
    
+}
+
+@media only screen and (max-width: 720px) {
+  .body{
+    padding-left: 0;
+  }
 }
