@@ -51,7 +51,7 @@ function ProjectCard({ project }) {
           Github
         </Button>
         <Button
-          size="small"
+          size="medium"
           color="primary"
           href={project.demo}
           startIcon={<PreviewIcon />}
