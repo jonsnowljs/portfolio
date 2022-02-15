@@ -6,6 +6,8 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import { ReactComponent as Logo } from '../../../assets/img/skill/react.svg';
 import { ReactIcon } from 'react-webtech-animated-icons';
+import { ProjectData } from '../../../assets/data/ProjectData';
+import ProjectCard from './ProjectCard';
 
 function ProjectTimeline() {
   let linearColor =
@@ -14,6 +16,7 @@ function ProjectTimeline() {
   return (
     <VerticalTimeline lineColor={linearColor} className="vertical-line">
       <VerticalTimelineElement
+        id='project0'
         className="vertical-timeline-element--project"
         contentStyle={{
           background: 'rgb(33, 150, 243)',
@@ -32,53 +35,31 @@ function ProjectTimeline() {
         }}
         icon={<ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} size={60}/>}
       >
-        <h3 className="vertical-timeline-element-title">Test</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
-        </p>
+        
+
       </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--project"
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-        date="2022-02"
-        iconStyle={{
-          background: '',
-          color: 'rgb(33, 150, 243)',
-          paddingTop: 5,
-          backgroundColor: 'white',
-        }}
-        icon={<ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} />}
-      >
-        <h3 className="vertical-timeline-element-title">Test</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--project"
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-        date="2022-02"
-        iconStyle={{
-          background: '',
-          color: 'rgb(33, 150, 243)',
-          paddingTop: 5,
-          backgroundColor: 'white',
-        }}
-        icon={<ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} />}
-      >
-        <h3 className="vertical-timeline-element-title">Test</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
-        </p>
-      </VerticalTimelineElement>
+      {ProjectData.map((project) => {
+        return (
+        <VerticalTimelineElement
+          id={project.id}
+          className="vertical-timeline-element--project"
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          date="2022-02"
+          iconStyle={{
+            background: '',
+            color: 'rgb(33, 150, 243)',
+            paddingTop: 5,
+            backgroundColor: 'white',
+          }}
+          icon={<ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} />}
+        >
+          <ProjectCard project={project} />
+        </VerticalTimelineElement>
+        )
+      })}
+
+
     </VerticalTimeline>
   );
 }
