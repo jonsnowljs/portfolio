@@ -4,7 +4,7 @@
 
 .about-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -30,7 +30,7 @@
     height: 280px;
   }
   .about-info{
-    font-size: 20px;
+    font-size: 18px;
   }
   .info-name{
     font-size: 26px;
