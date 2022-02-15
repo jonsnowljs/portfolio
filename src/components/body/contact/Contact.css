@@ -12,7 +12,7 @@
 .contact-container {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
   margin: 16px 0px;
 }
@@ -23,8 +23,6 @@
 }
 
 .download {
-  background-image: linear-gradient( to right, #331992, #3326a2, #3233b3, #2e3fc4, #274bd5, #165cdf, #026ce8, #007cef, #008ee9, #009ad6, #00a3be, #30a8a8 );
-  padding: 8px 16px;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -36,6 +34,11 @@
   text-decoration: none;
   padding: 8px 16px;
   color: white;
+}
+.button-name {
+  font-weight: 500;
+  font-size: large;
+  margin-top: 3px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -50,7 +53,7 @@
     margin-bottom: 12px;
   }
   .download{
-    margin-top: 60px;
+    margin-top: 12px;
     font-size: 16px;
   }
 }
