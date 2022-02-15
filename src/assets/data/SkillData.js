@@ -2,18 +2,18 @@ export const SkillData = [
   {
     type: 'Frontend',
     list: [
-      { name: 'React', icon: <i class="devicon-react-original colored"></i> },
-      { name: 'JavaScript', icon: <i class="devicon-javascript-plain colored"></i> },
-      { name: 'TypeScript', icon: <i class="devicon-typescript-original colored"></i> },
-      { name: 'Express.js', icon: <i class="devicon-express-original-wordmark"></i> },
+      { name: 'React', icon: require('../../assets/img/skill/react.svg').default },
+      { name: 'JavaScript', icon: require('../../assets/img/skill/javascript.svg').default },
+      { name: 'TypeScript', icon: require('../../assets/img/skill/typescript.svg').default },
+      { name: 'Express.js', icon: require('../../assets/img/skill/express.svg').default },
     ],
   },
   {
     type: 'Backend',
     list: [
-      { name: 'Java', icon: <i class="devicon-java-plain colored"></i> },
-      { name: 'NodeJS', icon: <i class="devicon-nodejs-plain colored"></i> },
-      { name: 'C#', icon: <i class="devicon-csharp-plain colored"></i> },
+      { name: 'Java', icon: require('../../assets/img/skill/java.svg').default },
+      { name: 'NodeJS', icon: require('../../assets/img/skill/nodejs.svg').default },
+      { name: 'C#', icon: require('../../assets/img/skill/csharp.svg').default },
     ],
   },
 ];
