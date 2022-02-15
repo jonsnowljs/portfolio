@@ -34,7 +34,7 @@ function SocialContents() {
           <UseAnimations
             animation={archive}
             size={60}
-            wrapperStyle={{ padding: 10 }}
+            wrapperStyle={{ paddingLeft: 20, paddingRight: 20, paddingTop:10 }}
             className="social-icon"
             strokeColor={'#EA4335'}
           />
