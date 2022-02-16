@@ -1,5 +1,4 @@
 import React from 'react';
-import SeparatorBottom from '../../common/separator/SeparatorBottom'
 import './Skill.css';
 import { SkillData } from '../../../assets/data/SkillData';
 import SkillCard from './SkillCard';
@@ -9,8 +8,6 @@ function Skill() {
 
   return (
     <div className="skills">
-      <SeparatorBottom />
-      <label className="section-title">Skills</label>
       <div className="skills-container">
         {data.map((item) => {
           return (
@@ -27,6 +24,7 @@ function Skill() {
           );
         })}
       </div>
+
     </div>
   );
 }
