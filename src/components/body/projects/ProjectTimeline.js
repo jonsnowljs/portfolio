@@ -26,7 +26,6 @@ function ProjectTimeline() {
           transition: '0.3s',
         }}
         contentArrowStyle={{ borderRight: '8px solid  rgb(33, 150, 243)' }}
-        date="2022-02"
         iconStyle={{
           background: '',
           color: 'rgb(33, 150, 243)',
@@ -40,23 +39,41 @@ function ProjectTimeline() {
       </VerticalTimelineElement>
       {ProjectData.map((project) => {
         return (
-        <VerticalTimelineElement
-          id={project.id}
-          className="vertical-timeline-element--project"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2022-02"
-          iconStyle={{
-            background: '',
-            color: 'rgb(33, 150, 243)',
-            paddingTop: 5,
-            backgroundColor: 'white',
-          }}
-          icon={<ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} />}
-        >
-          <ProjectCard project={project} />
-        </VerticalTimelineElement>
-        )
+          <VerticalTimelineElement
+            id={project.id}
+            className="vertical-timeline-element--project"
+            contentStyle={{
+              background: 'white',
+              color: '#fff',
+              boxShadow:
+                '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+              }}
+            contentArrowStyle={{
+              borderRight: '7px solid  transparent'
+            }}
+            // TODO fix the error on the arrow of the box box arrow I try to make but failed
+            // contentArrowStyle={{
+            //   backgroundColor: 'white',
+            //   transformOrigin: '0 0',
+            //   transform: 'rotate(-45deg)',
+            //   // borderRight: '-10px solid ',
+            //   boxShadow: '-3px -3px 3px -2px rgb(0 0 0 / 20%)',
+            //   position: 'absolute',
+            //   left: '-7px'
+            // }}
+            iconStyle={{
+              background: '',
+              color: 'rgb(33, 150, 243)',
+              paddingTop: 5,
+              backgroundColor: 'white',
+            }}
+            icon={
+              <ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} />
+            }
+          >
+            <ProjectCard project={project} />
+          </VerticalTimelineElement>
+        );
       })}
 
 
