@@ -1,3 +1,9 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* This is changing width and shadow of the vertical line in the timeline*/
 .vertical-timeline::before {
   width: 6px !important ;
@@ -11,18 +17,26 @@
   box-shadow: 4px 1px 8px 0 rgba(0, 0, 0, 0.35);
 }
 
+/* .vertical-timeline-element-content {
+    padding: 0 !important;
+} */
 
+/* This is used to create hover shadow effect for the card in timeline */
+.vertical-timeline-element-content:hover {
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%) !important;
+}
 
 /* This is changing css code of the circle in the timeline */
-@media only screen and (min-width: 1170px){
-.vertical-timeline-element-icon {
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-icon {
     width: 70px !important;
     height: 70px !important;
     left: 50% !important;
     margin-left: -35px !important;
-}
+  }
 
-div .vertical-timeline-element-icon svg {
+  div .vertical-timeline-element-icon svg {
     display: block;
     width: 50px;
     height: 50px;
@@ -31,6 +45,5 @@ div .vertical-timeline-element-icon svg {
     top: 50%;
     margin-left: -25px;
     margin-top: -23px;
+  }
 }
-}
-
