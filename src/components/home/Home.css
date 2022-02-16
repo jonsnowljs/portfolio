@@ -8,12 +8,22 @@ html {
   margin: auto;
 }
 
-.page-one{
+.page-one {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.vh-100{
+.page-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vh-100 {
   height: 100vh;
 }
 

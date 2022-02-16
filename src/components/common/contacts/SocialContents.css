@@ -20,6 +20,9 @@
 }
 
 @media only screen and (max-width: 720px) {
+  .social-contact {
+    flex-wrap: wrap;
+  }
   .social-icon-div {
     padding: 6px;
     cursor: pointer;

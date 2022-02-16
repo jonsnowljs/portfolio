@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 
 .skills-section {
@@ -18,14 +19,13 @@
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 70%;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 @media only screen and (max-width: 1200px) {
   .skills-list {
     max-width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .skills-list {
     justify-self: center;

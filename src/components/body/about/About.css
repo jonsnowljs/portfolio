@@ -1,5 +1,7 @@
 .about {
   padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-top {
