@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './Contact.css';
-import Separator from '../../common/separator/Separator';
 import SocialContacts from '../../common/contacts/SocialContents';
 import Button from '@mui/material/Button';
 import UseAnimations from 'react-useanimations';
@@ -12,8 +11,6 @@ function Contact() {
 
   return (
     <div className="contact">
-      <Separator />
-      <label className="section-title">Contact</label>
       <div className="contact-container">
         <div className="contact-left">
           <div className="download">
