@@ -7,16 +7,18 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="header">
-      <div className="logo">L.JS</div>
-      <div className="menu">
-        <div className="web-menu">
-          <WebHeader />
-        </div>
-        <div onClick={() => {setIsOpen(!isOpen)}} className='mobile-menu'>
-          <i class="fi fi-rr-apps menu-icon"></i>
-        </div>
+      <div className='header-box'>
+        <div className="logo">L.JS</div>
+        <div className="menu">
+          <div className="web-menu">
+            <WebHeader />
+          </div>
+          <div onClick={() => {setIsOpen(!isOpen)}} className='mobile-menu'>
+            <i class="fi fi-rr-apps menu-icon"></i>
+          </div>
 
-        {isOpen && <MobileHeader isOpen={isOpen} setIsOpen={setIsOpen}/>}
+          {isOpen && <MobileHeader isOpen={isOpen} setIsOpen={setIsOpen}/>}
+        </div>
       </div>
     </div>
   );

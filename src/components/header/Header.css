@@ -1,12 +1,16 @@
 .header {
   display: flex;
+  align-items: flex-start;
+}
+
+.header-box {
+  display: flex;
   justify-content: space-between;
   flex: 1;
   padding: 36px 12px;
   position: relative;
-  align-items: center;
+  align-items:center;
 }
-
 .menu {
   display: flex;
   flex: 1;
