@@ -15,28 +15,6 @@ function ProjectTimeline() {
 
   return (
     <VerticalTimeline lineColor={linearColor} className="vertical-line">
-      <VerticalTimelineElement
-        id='project0'
-        className="vertical-timeline-element--project"
-        contentStyle={{
-          background: 'rgb(33, 150, 243)',
-          color: '#fff',
-          borderRadius: 15,
-          boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
-          transition: '0.3s',
-        }}
-        contentArrowStyle={{ borderRight: '8px solid  rgb(33, 150, 243)' }}
-        iconStyle={{
-          background: '',
-          color: 'rgb(33, 150, 243)',
-          paddingTop: 5,
-          backgroundColor: 'white',
-        }}
-        icon={<ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} size={60}/>}
-      >
-        
-
-      </VerticalTimelineElement>
       {ProjectData.map((project) => {
         return (
           <VerticalTimelineElement
@@ -45,11 +23,12 @@ function ProjectTimeline() {
             contentStyle={{
               background: 'white',
               color: '#fff',
+              borderRadius: 15,
               boxShadow:
                 '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
-              }}
+            }}
             contentArrowStyle={{
-              borderRight: '7px solid  transparent'
+              borderRight: '7px solid  transparent',
             }}
             // TODO fix the error on the arrow of the box box arrow I try to make but failed
             // contentArrowStyle={{
@@ -63,20 +42,21 @@ function ProjectTimeline() {
             // }}
             iconStyle={{
               background: '',
-              color: 'rgb(33, 150, 243)',
-              paddingTop: 5,
-              backgroundColor: 'white',
+              color: 'white',
+              backgroundColor: 'rgb(97, 218, 251)',
             }}
             icon={
-              <ReactIcon firstColor="red" secondColor="#8ED6FB" duration={3} />
+              <ReactIcon
+                firstColor="#026ce8"
+                secondColor="#8ED6FB"
+                duration={2}
+              />
             }
           >
             <ProjectCard project={project} />
           </VerticalTimelineElement>
         );
       })}
-
-
     </VerticalTimeline>
   );
 }
