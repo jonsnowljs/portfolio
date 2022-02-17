@@ -1,3 +1,4 @@
+// TODO optimize the image size of all data
 export const ProjectData = [
   {
     id: 'project1',
@@ -7,16 +8,15 @@ export const ProjectData = [
     tags: ['React', 'JavaScript', 'CSS', 'MUI'],
     demo: 'https://demo.com',
     github: 'https://github.com/jonsnowljs/portfolio',
-    img: require('../img/project/demo.jpg').default,
+    img: require('../img/project/portfolio1.png'),
   },
   {
     id: 'project2',
-    title: 'My Resume',
-    intro:
-      'This my first resume project. I will show my projects here.This my first resume project. I will show myself and my projects here.',
-    tags: ['React', 'CSS', 'JavaScript'],
+    title: 'Amazon Clone',
+    intro: 'This project is a amazon clone build with React and Firebase.',
+    tags: ['React', 'JavaScript', 'Firebase'],
     demo: '',
-    github: 'https://github.com/jonsnowljs/portfolio',
-    img: require('../img/project/demo.jpg').default,
+    github: 'https://github.com/jonsnowljs/amazon-clone',
+    // img: require('../img/project/amazonclone1.png'),
   },
 ];

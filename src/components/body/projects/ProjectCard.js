@@ -27,7 +27,7 @@ function ProjectCard({ project }) {
             component="img"
             height="140"
             image={project.img}
-            alt="green iguana"
+            alt={`Screenshot of ${project.title}`}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
