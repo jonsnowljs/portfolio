@@ -14,7 +14,7 @@ function Header() {
             <WebHeader />
           </div>
           <div onClick={() => {setIsOpen(!isOpen)}} className='mobile-menu'>
-            <i class="fi fi-rr-apps menu-icon"></i>
+            <i class="fi fi-rr-apps menu-icon" hidden={isOpen}></i>
           </div>
 
           {isOpen && <MobileHeader isOpen={isOpen} setIsOpen={setIsOpen}/>}

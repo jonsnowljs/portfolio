@@ -1,6 +1,7 @@
 import React from 'react';
 import './WebHeader.css';
-function WebHeader() {
+function WebHeader(props) {
+  
   return (
     <div className="web">
       <div className="web-option">
@@ -19,7 +20,7 @@ function WebHeader() {
         </a>
       </div>
       <div className="web-option">
-        <a href="#contact">
+        <a href="#contact" >
           <i class="fi fi-rr-portrait option-icon"></i>Contact
         </a>
       </div>
