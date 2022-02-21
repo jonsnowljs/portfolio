@@ -1,0 +1,11 @@
+{
+  "landingReference": "landing",
+  "aboutMeReference": "aboutMe",
+  "projectsReference": "projects",
+  "skillsReference": "skills",
+  "contactReference": "contact",
+  "latestBlogPostsReference": "latestBlogPosts",
+  "pageTitle": "Jiasheng Lu",
+  "pageDescription": "Hey, this is my personal website. You can take a look at my portfolio, download my resume and see how you can contact me!",
+  "metaImageAlt": "The image contains the logo of this website.."
+}
