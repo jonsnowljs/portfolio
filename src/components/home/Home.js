@@ -10,7 +10,7 @@ import Title from '../common/title/Title';
 import MetaDecorator from 'components/util/MetaDecorator';
 import metaThumbnail from '../../assets/img/avatar.svg';
 import Particles from 'react-tsparticles';
-import particlesOptions from "../../assets/data/practicles.json"
+import particlesOptions from "../../assets/data/particles.json"
 // import NavigationBar from 'components/Navbar/NavigationBar';
 
 const content = require("../../assets/data/content.json")
