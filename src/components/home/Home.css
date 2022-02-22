@@ -200,3 +200,7 @@ html {
     transform: translateY(-3px);
   }
 }
+
+#tsparticles{
+  opacity: 0.4 !important;
+}
