@@ -14,8 +14,10 @@
 
 .close-icon {
   display: flex;
+  position: fixed;
   justify-content: flex-end;
   font-size: 24px;
+  z-index: 100;
 }
 
 .mobile-options {
