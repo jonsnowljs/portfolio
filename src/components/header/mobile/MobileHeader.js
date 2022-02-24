@@ -1,6 +1,6 @@
 import React from 'react'
 import './MobileHeader.css'
-function MobileHeader({isOpen, setIsOpen}) {
+function MobileHeader({isOpen}) {
   return (
     <div className="mobile">
       {/* <div className='close-icon' onClick={()=>{setIsOpen(!isOpen)}}>
