@@ -65,8 +65,8 @@ function ProjectCard({ project }) {
           >
             {/* TODO add deleteIcon={<DoneIcon />} onDelete={handleDelete} icon={<FaceIcon />} */}
 
-            {project.tags.map((tag) => {
-              return <Chip variant="outlined" label={tag} />;
+            {project.tags.map((tag, index) => {
+              return <Chip variant="outlined" label={tag} key={index} />;
             })}
           </Stack>
         </CardActions>

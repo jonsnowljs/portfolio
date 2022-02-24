@@ -18,7 +18,7 @@ function ProjectTimeline() {
       {ProjectData.map((project) => {
         return (
           <VerticalTimelineElement
-            id={project.id}
+            key={project.id}
             className="vertical-timeline-element--project"
             contentStyle={{
               background: 'white',
