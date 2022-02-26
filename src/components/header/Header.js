@@ -31,12 +31,12 @@ function Header() {
           <div
             className="mobile-menu close-icon"
           >
-            {size.width < 720 || y > 100 && (
+            {size.width < 720  && (
               <Hamburger toggled={isOpen} toggle={setIsOpen}/>
             )}
           </div>
 
-          {(isOpen && (size.width < 720 || y > 100)) && <MobileHeader isOpen={isOpen} />}
+          {(isOpen && size.width < 720) && <MobileHeader isOpen={isOpen} />}
 
         </div>
       </div>
