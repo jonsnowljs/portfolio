@@ -7,22 +7,17 @@ function MobileHeader({isOpen}) {
         <i class="fi fi-rr-cross-circle"></i>
       </div> */}
       <div className='mobile-options'>
-        <div className="mobile-option">
+        <div className="mobile-option hover-underline-animation">
           <a href="#projects">
             <i class="fi fi-rr-keyboard option-icon"></i>Projects
           </a>
         </div>
-        <div className="mobile-option">
+        <div className="mobile-option hover-underline-animation">
           <a href="#skills">
             <i class="fi fi-rr-dashboard option-icon"></i>Skills
           </a>
         </div>
-        <div className="mobile-option">
-          <a href="#work">
-            <i class="fi fi-rr-dashboard option-icon"></i>Work
-          </a>
-        </div>
-        <div className="mobile-option">
+        <div className="mobile-option hover-underline-animation">
           <a href="#contact">
             <i class="fi fi-rr-portrait option-icon"></i>Contact
           </a>

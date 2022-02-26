@@ -26,3 +26,37 @@
 .web-option:last-child {
   margin-right: 0px;
 }
+
+.hover-underline-animation {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hover-underline-animation {
+  background: linear-gradient(
+      to right,
+      transparent,
+      transparent
+    ),
+    linear-gradient(
+      to right,
+      #30a8a8,
+      #00a3be,
+      #008ee9,
+      #007cef,
+      #026ce8,
+      #165cdf,
+      #2e3fc4,
+      #3233b3,
+      #3326a2,
+      #331992
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.hover-underline-animation:hover {
+  background-size: 0 3px, 100% 3px;
+}
