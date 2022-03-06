@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import '../../styles/Home.scss';
 import Header from '../header/Header';
 import About from '../body/about/About';
 import Separator from '../common/separator/Separator';
@@ -11,20 +11,19 @@ import MetaDecorator from 'components/util/MetaDecorator';
 import metaThumbnail from '../../assets/img/avatar.svg';
 import Particles from 'react-tsparticles';
 import particlesOptions from "../../assets/data/particles.json"
-// import NavigationBar from 'components/Navbar/NavigationBar';
 
 const content = require("../../assets/data/content.json")
 
 function Home() {
     
     const particlesInit = (main) => {
-      console.log(main);
+      // console.log(main);
 
       // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     };
 
     const particlesLoaded = (container) => {
-      console.log(container);
+      // console.log(container);
     };
 
   return (
