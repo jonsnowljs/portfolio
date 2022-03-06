@@ -4,9 +4,9 @@ export const ProjectData = [
     id: 'project1',
     title: 'My Resume',
     intro:
-      'This my first resume project. I will show myself and my projects here. This my first resume project. I will show myself and my projects here.',
-    tags: ['React', 'JavaScript', 'CSS', 'MUI'],
-    demo: 'https://demo.com',
+      'This my first resume project. I will show myself and my projects here.',
+    tags: ['React', 'JavaScript', 'SCSS', 'MUI'],
+    demo: 'https://jonsnowljs.github.io/portfolio/',
     github: 'https://github.com/jonsnowljs/portfolio',
     img: require('../img/project/portfolio1.png'),
   },
