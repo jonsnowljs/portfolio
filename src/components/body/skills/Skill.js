@@ -11,7 +11,7 @@ function Skill() {
       <div className="skills-container">
         {data.map((item) => {
           return (
-            <>
+            <div key={item.type}>
               <label className="skills-section-title">{item.type}</label>
               <div className="skills-section">
                 <div className="skills-list" >
@@ -20,7 +20,7 @@ function Skill() {
                   })}
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

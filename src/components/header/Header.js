@@ -12,7 +12,6 @@ function Header() {
   const { y, lastY } = useScroll();  
 
   // close the menu when detect the scroll in vertical direction.
-  console.log(y, lastY)
   useEffect(() => {
     if ( Math.abs(y - lastY) > 10) {
       setIsOpen(false)

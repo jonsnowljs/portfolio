@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import UseAnimations from 'react-useanimations';
 import download from 'react-useanimations/lib/download';
 
+
 // Contact section
 function Contact() {
   const [isPlay, setIsPlay] = useState(true);
@@ -17,7 +18,7 @@ function Contact() {
             {/* TODO update resume pdf*/}
 
             <a download href="../../../assets/resume.pdf">
-              <Button variant="contained" color="info" startIcon={<UseAnimations animation={download} size={"large"} autoPlay={"true"} loop={"true"} />} onClick={() => {setIsPlay(!isPlay)}}>                
+              <Button variant="contained" color="info" startIcon={<UseAnimations animation={download} size={"large"} autoPlay={true} loop={"true"} />} onClick={() => {setIsPlay(!isPlay)}}>                
                 <span className='button-name'>My Resume</span>
               </Button>
             </a>

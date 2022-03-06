@@ -3,6 +3,7 @@ import './About.css'
 import avatar from '../../../assets/img/avatar.svg'
 import SocialContents from '../../common/contacts/SocialContents'
 import Typist from 'react-typist';
+import './Typist.css'
 
 function About() {
   return (

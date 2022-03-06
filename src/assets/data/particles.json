@@ -17,7 +17,7 @@
       }
     },
     "shape": {
-      "type": ["circle", "square", "star", "polygon", "line", "images"]
+      "type": ["circle", "square", "star", "polygon", "line"]
     },
     "opacity": {
       "value": 1
@@ -51,7 +51,7 @@
       "onclick": {
         "enable": true,
         "mode": ["trail"],
-        "type": ["circle", "square", "star", "polygon", "line", "images"]
+        "type": ["circle", "square", "star", "polygon", "line"]
       },
       "onHover": {
         "enable": true,
