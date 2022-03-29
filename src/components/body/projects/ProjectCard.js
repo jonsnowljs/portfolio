@@ -21,8 +21,8 @@ import { Box } from '@mui/system';
 function ProjectCard({ project }) {
   return (
     <Box display="inline-block">
-      <Card color='blue' sx={{ maxWidth: 1500, boxShadow: 0}}>
-        <CardActionArea>
+      <Card color="blue" sx={{ maxWidth: 1500, boxShadow: 0 }}>
+        <CardActionArea onClick={() => window.open(project.demo)}>
           <CardMedia
             component="img"
             height="140"
