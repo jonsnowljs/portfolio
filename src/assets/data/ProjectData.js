@@ -12,11 +12,20 @@ export const ProjectData = [
   },
   {
     id: 'project2',
-    title: 'Amazon Clone',
-    intro: 'This project is a amazon clone build with React and Firebase.',
-    tags: ['React', 'JavaScript', 'Firebase'],
-    demo: '',
-    github: 'https://github.com/jonsnowljs/amazon-clone',
-    // img: require('../img/project/amazonclone1.png'),
+    title: 'Shopping',
+    intro:
+      'This is my first full-stack project. It is a shopping website build with MERN stack and deployed in Heroku. The features include shopping cart, product ratings and reviews, product pagination, product search, admin product management, admin user management, admin order details page, admin, mark order as delivered, Paypal payment',
+    tags: [
+      'React',
+      'Express',
+      'Node',
+      'MongoDB',
+      'Heroku',
+      'Redux',
+      'Bootstrap',
+    ],
+    demo: 'https://shoppingmernappjs.herokuapp.com/',
+    github: 'https://github.com/jonsnowljs/Shopping',
+    img: require('../img/project/shopping1.png'),
   },
 ];
