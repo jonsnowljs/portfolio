@@ -4,6 +4,7 @@ import avatar from '../../../assets/img/avatar.svg';
 import SocialContents from '../../common/contacts/SocialContents';
 import Typist from 'react-typist';
 import './Typist.css';
+import AvatarIcon from './AvatarIcon';
 
 function About() {
   return (
@@ -22,7 +23,8 @@ function About() {
           </Typist>
         </div>
         <div className="about-photo">
-          <img src={avatar} alt="My avatar" className="picture" />
+          {/* <img src={avatar} alt="My avatar" className="picture" /> */}
+          <AvatarIcon />
         </div>
       </div>
       <SocialContents />

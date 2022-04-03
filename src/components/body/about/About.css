@@ -16,11 +16,16 @@
 }
 .about-info {
   font-size: 60px;
+  width: 600px;
 }
 .info-name {
   color: #0043d4;
   font-weight: 900;
   font-style: italic;
+}
+.about-photo {
+  width: 600px;
+  height: 500px;
 }
 
 @media only screen and (max-width: 720px) {
