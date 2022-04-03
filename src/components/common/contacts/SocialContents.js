@@ -15,8 +15,9 @@ function SocialContents() {
           <UseAnimations
             animation={linkedin}
             size={60}
-            wrapperStyle={{ padding: 20 }}
             strokeColor={'#0072B1'}
+            loop="loop"
+            wrapperStyle={{ margin: 3 }}
           />
         </div>
       </a>
@@ -25,21 +26,20 @@ function SocialContents() {
           <UseAnimations
             animation={github}
             size={60}
-            wrapperStyle={{ padding: 20 }}
+            wrapperStyle={{ margin: 3 }}
           />
         </div>
       </a>
-      <a href={data[2].link} className="archive-logo">
+      {/* <a href={data[2].link} className="archive-logo">
         <div className="social-icon ">
           <UseAnimations
             animation={archive}
             size={60}
-            wrapperStyle={{ paddingLeft: 20, paddingRight: 20, paddingTop:10 }}
             className="social-icon"
             strokeColor={'#EA4335'}
           />
         </div>
-      </a>
+      </a> */}
     </div>
   );
 }

@@ -31,9 +31,15 @@
 
 .logo{
   display: flex;
-  font-size: 36px;
-  color: blueviolet;
+  font-size: 45px;
+  color: #0043d4;
   font-weight: 800;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo span {
+  color: #37dad2;
 }
 
 @media only screen and (max-width: 720px) {
@@ -44,6 +50,6 @@
     display: none;
   }
   .logo{
-    font-size: 24px;
+    font-size: 40px;
   }
 }

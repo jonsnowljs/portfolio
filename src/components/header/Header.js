@@ -22,7 +22,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header-box">
-        <div className="logo">L.JS</div>
+        <div className="logo">L<span>.</span>JS</div>
         <div className="menu">
           <div className="web-menu">
             <WebHeader />

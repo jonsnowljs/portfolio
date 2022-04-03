@@ -1,17 +1,36 @@
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
 .home {
-  display: flex;
   flex-direction: column;
-  width: 70%;
   margin: auto;
+  background-clip: border-box;
 }
 
 .page-one {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: linear-gradient(
+      296.37deg,
+      rgba(166, 243, 166, 0.815) 6.69%,
+      rgba(194, 78, 40, 0) 33.83%
+    ),
+    linear-gradient(
+      129.1deg,
+      rgb(159, 142, 234) -1.7%,
+      rgba(253, 229, 178, 0) 72.42%
+    ),
+    linear-gradient(
+      26.22deg,
+      rgb(16, 0, 241) 2.78%,
+      rgb(82, 197, 191) 30.98%,
+      rgb(144, 243, 144) 53.17%
+    );
+  padding: 0 15%;
 }
 .page-three {
   display: flex;
@@ -24,7 +43,7 @@ html {
   justify-content: space-between;
 }
 .vh-100 {
-  height: 100vh;
+  height: 110vh;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -39,8 +58,7 @@ html {
   }
 }
 
-
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,700,800");
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700,800');
 
 /** Styles for the 403 Page **/
 
@@ -78,7 +96,7 @@ html {
 .permission_denied h1 {
   text-align: center;
   color: #fff;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 100px;
   margin-bottom: 0px;
   font-weight: 800;
@@ -91,7 +109,7 @@ html {
   line-height: 23px;
   max-width: 330px;
   margin: 0px auto 30px auto;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 400;
 }
 
@@ -102,7 +120,7 @@ html {
 }
 
 .permission_denied h3 span:after {
-  content: "";
+  content: '';
   border-bottom: 3px solid #ffbb39;
   position: absolute;
   left: 0;
@@ -125,7 +143,7 @@ html {
   display: block;
   margin-bottom: 40px;
   margin-top: 25px;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 400;
 }
 
@@ -201,6 +219,6 @@ html {
   }
 }
 
-#tsparticles{
+#tsparticles {
   opacity: 0.4 !important;
 }

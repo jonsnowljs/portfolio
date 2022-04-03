@@ -6,7 +6,7 @@
 
 .about-top {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 0 10%;
   align-items: center;
 }
@@ -15,27 +15,30 @@
   height: 420px;
 }
 .about-info {
-  font-size: 24px;
-
+  font-size: 60px;
 }
-.info-name{
-  color: blue;
-  font-size: 32px;
+.info-name {
+  color: #0043d4;
+  font-weight: 900;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 720px) {
-  .about-top{
+  .about-top {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .about-info {
+  font-size: 50px;
+}
   .picture {
     height: 280px;
   }
-  .about-info{
+  .about-info {
     font-size: 18px;
   }
-  .info-name{
+  .info-name {
     font-size: 26px;
   }
 }

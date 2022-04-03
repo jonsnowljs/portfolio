@@ -1,9 +1,9 @@
-import React from 'react'
-import './About.css'
-import avatar from '../../../assets/img/avatar.svg'
-import SocialContents from '../../common/contacts/SocialContents'
+import React from 'react';
+import './About.css';
+import avatar from '../../../assets/img/avatar.svg';
+import SocialContents from '../../common/contacts/SocialContents';
 import Typist from 'react-typist';
-import './Typist.css'
+import './Typist.css';
 
 function About() {
   return (
@@ -14,8 +14,10 @@ function About() {
             Hi👋, I am
             <br /> <span className="info-name">Jiasheng Lu</span>
             <br />
-            I'm a junior
-            <Typist.Backspace count={6} delay={10} />
+            I'm a front
+            <Typist.Backspace count={5} delay={10} />
+            back
+            <Typist.Backspace count={4} delay={10} />
             full-stack developer.
           </Typist>
         </div>
@@ -28,4 +30,4 @@ function About() {
   );
 }
 
-export default About
+export default About;

@@ -1,16 +1,16 @@
-.mobile{
+.mobile {
   background-color: white;
   height: 30vh;
-  width: 75vw;
+  width: 70vw;
   position: fixed;
   padding: 18px 12px;
   display: flex;
   flex-direction: column;
   z-index: 10;
   box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
-    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%) ;
+    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
   border-radius: 10px;
-  margin-top: 240px;
+  margin-top: 200px;
 }
 
 .close-icon {
@@ -35,21 +35,16 @@
   font-size: 24px;
   margin: 12px 0px;
   display: flex;
-
 }
 
-.mobile-option a{
+.mobile-option a {
   text-decoration: none;
   color: black;
   display: flex;
 }
 
 .hover-underline-animation {
-  background: linear-gradient(
-      to right,
-      transparent,
-      transparent
-    ),
+  background: linear-gradient(to right, transparent, transparent),
     linear-gradient(
       to right,
       #30a8a8,

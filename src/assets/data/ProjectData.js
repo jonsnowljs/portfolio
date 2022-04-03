@@ -18,7 +18,7 @@ export const ProjectData = [
     tags: [
       'React',
       'Express',
-      'Node',
+      'NodeJS',
       'MongoDB',
       'Heroku',
       'Redux',
