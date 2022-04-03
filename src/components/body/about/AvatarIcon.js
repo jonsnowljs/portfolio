@@ -8,8 +8,8 @@ function AvatarIcon() {
   // This is used to control the start and end state of the water animation
   const [{ freq, factor, scale, opacity }] = useSpring(() => ({
     reverse: open,
-    from: { factor: 100, opacity: 0, scale: 0.9, freq: '0.1, 0.1' },
-    to: { factor: 350, opacity: 1, scale: 1.1, freq: '0.0, 0.0' },
+    from: { factor: 100, opacity: 0, scale: 0.5, freq: '0.1, 0.1' },
+    to: { factor: 350, opacity: 1, scale: 0.9, freq: '0.0, 0.0' },
     config: { duration: 5000 },
   }));
 

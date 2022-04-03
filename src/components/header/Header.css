@@ -31,6 +31,8 @@
 
 .logo{
   display: flex;
+  position: absolute;
+  top: 40px;
   font-size: 45px;
   color: #0043d4;
   font-weight: 800;
@@ -43,6 +45,10 @@
 }
 
 @media only screen and (max-width: 720px) {
+  .logo{
+  font-size: 30px;
+  top: 20px;
+  }
   .mobile-menu{
     display: flex;
   }

@@ -47,6 +47,9 @@ html {
 }
 
 @media only screen and (max-width: 1024px) {
+  .page-one {
+    justify-content: space-around;
+  }
   .home {
     width: 90%;
   }
