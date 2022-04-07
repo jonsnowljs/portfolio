@@ -7,7 +7,7 @@
 .contact-container {
   display: flex;
   flex: 1;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin: 16px 0px;
 }
@@ -42,13 +42,23 @@
     justify-content: center;
     align-items: center;
   }
-  .contact-left{
+  .contact-left {
     max-width: 100%;
     font-size: 16px;
     margin-bottom: 12px;
   }
-  .download{
+  .download {
     margin-top: 12px;
     font-size: 16px;
+  }
+  .download a {
+    text-decoration: none;
+    padding: 4px 8px;
+    color: white;
+  }
+  .button-name {
+    font-weight: 500;
+    font-size: small;
+    margin-top: 3px;
   }
 }

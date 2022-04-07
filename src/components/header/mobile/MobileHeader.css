@@ -1,6 +1,7 @@
 .mobile {
   background-color: white;
-  height: 30vh;
+  height: 300px;
+  top: 0;
   width: 100vw;
   position: fixed;
   display: flex;

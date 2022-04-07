@@ -32,6 +32,9 @@
   }
 }
 @media only screen and (max-width: 720px) {
+  .skills {
+    margin: 0 8%;
+  }
   .skills-list {
     max-width: 100%;
     justify-content: center;
