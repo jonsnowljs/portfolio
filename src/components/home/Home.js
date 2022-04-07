@@ -34,13 +34,13 @@ function Home() {
       />
       {/* <NavigationBar/> */}
       {/* load the praticles config from practicles.json */}
-      <Particles
+      {/* <Particles
         id="tsparticles"
         options={particlesOptions}
         init={particlesInit}
         loaded={particlesLoaded}
         style
-      />
+      /> */}
       <div className="page-one vh-100">
         <Header />
         <About />
