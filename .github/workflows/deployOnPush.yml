@@ -18,7 +18,9 @@ jobs:
       - name: Clean install dependencies
         run: npm ci
 
+      - name: Install Packages
+      run: npm install
+
       - name: Run deploy script
         run: |
-          git config user.name "jonsnowljs" && git config user.email "jonsnowljs@gamil.com"
           npm run deploy
