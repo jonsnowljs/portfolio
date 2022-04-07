@@ -13,7 +13,7 @@ html {
 .page-one {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background-image: linear-gradient(
       296.37deg,
       rgba(166, 243, 166, 0.815) 6.69%,
@@ -49,6 +49,11 @@ html {
 @media only screen and (max-width: 1024px) {
   .page-one {
     justify-content: space-around;
+  }
+  .page-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .home {
     width: 90%;

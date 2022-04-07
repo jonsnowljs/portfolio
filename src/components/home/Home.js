@@ -10,21 +10,19 @@ import Title from '../common/title/Title';
 import MetaDecorator from 'components/util/MetaDecorator';
 import metaThumbnail from '../../assets/img/avatar.svg';
 import Particles from 'react-tsparticles';
-import particlesOptions from "../../assets/data/particles.json"
+import particlesOptions from '../../assets/data/particles.json';
 
-const content = require("../../assets/data/content.json")
+const content = require('../../assets/data/content.json');
 
 function Home() {
-    
-    const particlesInit = (main) => {
-      // console.log(main);
+  const particlesInit = (main) => {
+    // console.log(main);
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
 
-      // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    };
-
-    const particlesLoaded = (container) => {
-      // console.log(container);
-    };
+  const particlesLoaded = (container) => {
+    // console.log(container);
+  };
 
   return (
     <div className="home">
@@ -46,22 +44,20 @@ function Home() {
       <div className="page-one vh-100">
         <Header />
         <About />
-        <Separator />
       </div>
       <div className="page-two" id="projects">
         <Title title="My Projects" />
         <Projects />
         <Separator />
       </div>
-      <div className="page-three vh-100" id="skills">
+      <div className="page-three" id="skills">
         <Title title="Skills" />
         <Skill />
         <Separator />
       </div>
-      <div className="page-four vh-100" id="contact">
+      <div className="page-four" id="contact">
         <Title title="Contact" />
         <Contact />
-        <Separator />
       </div>
     </div>
   );

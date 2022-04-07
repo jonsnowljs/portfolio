@@ -2,6 +2,7 @@
   padding-bottom: 48px;
   display: flex;
   flex-direction: column;
+  height: 800px;
 }
 
 .about-top {
@@ -26,6 +27,35 @@
 .about-photo {
   width: 600px;
   height: 500px;
+}
+
+@media only screen and (max-width: 1480px) {
+  .about {
+    height: 700px;
+  }
+  .about-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-info {
+    display: flex;
+    justify-content: center;
+  }
+  .about-photo {
+    width: 400px;
+    height: 400px;
+  }
+  .picture {
+    height: 280px;
+  }
+  .about-info {
+    font-size: 40px;
+  }
+  .info-name {
+    font-size: 26px;
+  }
 }
 
 @media only screen and (max-width: 720px) {

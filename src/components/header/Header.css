@@ -9,7 +9,7 @@
   flex: 1;
   padding: 36px 12px;
   position: relative;
-  align-items:center;
+  align-items: center;
 }
 .menu {
   display: flex;
@@ -18,18 +18,20 @@
   align-items: center;
 }
 
-.menu-icon{
+.menu-icon {
   font-size: 24px;
 }
 
 .mobile-menu {
-  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 .web-menu {
   display: flex;
 }
 
-.logo{
+.logo {
   display: flex;
   position: absolute;
   top: 40px;
@@ -45,17 +47,20 @@
 }
 
 @media only screen and (max-width: 720px) {
-  .logo{
-  font-size: 30px;
-  top: 20px;
+  .menu {
+    justify-content: center;
   }
-  .mobile-menu{
+  .logo {
+    font-size: 30px;
+    top: 20px;
+  }
+  .mobile-menu {
     display: flex;
   }
-  .web-menu{
+  .web-menu {
     display: none;
   }
-  .logo{
+  .logo {
     font-size: 40px;
   }
 }
