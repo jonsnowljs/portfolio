@@ -4,7 +4,7 @@ import './SocialContents.css';
 import UseAnimations from 'react-useanimations';
 import linkedin from 'react-useanimations/lib/linkedin';
 import github from 'react-useanimations/lib/github';
-// import archive from 'react-useanimations/lib/archive';
+import archive from 'react-useanimations/lib/archive';
 
 function SocialContents() {
   const data = SocialData;
@@ -30,7 +30,7 @@ function SocialContents() {
           />
         </div>
       </a>
-      {/* <a href={data[2].link} className="archive-logo">
+      <a href={data[2].link} className="archive-logo">
         <div className="social-icon ">
           <UseAnimations
             animation={archive}
@@ -39,7 +39,7 @@ function SocialContents() {
             strokeColor={'#EA4335'}
           />
         </div>
-      </a> */}
+      </a>
     </div>
   );
 }
