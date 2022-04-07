@@ -19,7 +19,7 @@ jobs:
         run: npm ci
 
       - name: Install Packages
-      run: npm install
+        run: npm install
 
       - name: Run deploy script
         run: |
