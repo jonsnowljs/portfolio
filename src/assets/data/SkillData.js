@@ -19,10 +19,10 @@ export const SkillData = [
         icon: require('../../assets/img/skill/typescript.svg').default,
       },
       { name: 'CSS', icon: require('../../assets/img/skill/css.svg').default },
-      // {
-      //   name: 'Sass',
-      //   icon: require('../../assets/img/skill/sass.svg').default,
-      // },
+      {
+        name: 'Sass',
+        icon: require('../../assets/img/skill/sass.svg').default,
+      },
       {
         name: 'Tailwind CSS',
         icon: require('../../assets/img/skill/tailwindcss.svg').default,
@@ -52,10 +52,10 @@ export const SkillData = [
         name: 'Express.js',
         icon: require('../../assets/img/skill/express.svg').default,
       },
-      // {
-      //   name: 'C#',
-      //   icon: require('../../assets/img/skill/csharp.svg').default,
-      // },
+      {
+        name: 'C#',
+        icon: require('../../assets/img/skill/csharp.svg').default,
+      },
       {
         name: 'python',
         icon: require('../../assets/img/skill/python.svg').default,
