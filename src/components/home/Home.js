@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../../styles/Home.scss';
 import Header from '../header/Header';
 import About from '../body/about/About';
@@ -11,6 +11,7 @@ import MetaDecorator from 'components/util/MetaDecorator';
 import metaThumbnail from '../../assets/img/avatar.svg';
 import Particles from 'react-tsparticles';
 import particlesOptions from '../../assets/data/particles.json';
+import FOG from 'vanta/dist/vanta.fog.min';
 
 const content = require('../../assets/data/content.json');
 
@@ -24,8 +25,36 @@ function Home() {
     // console.log(container);
   };
 
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const vantaRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        FOG({
+          el: vantaRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          highlightColor: 0xa5a5b1,
+          midtoneColor: 0x3160e,
+          lowlightColor: 0x3cff,
+          baseColor: 0xffffff,
+          blurFactor: 0.51,
+          speed: 0.6,
+          zoom: 1.8,
+        })
+      );
+    }
+
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
-    <div className="home">
+    <div className="home" ref={vantaRef}>
       <MetaDecorator
         description={content}
         title={content.pageTitle}
