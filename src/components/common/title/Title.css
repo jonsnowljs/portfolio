@@ -1,9 +1,16 @@
-.section-title-container{
+.section-title-container {
   display: flex;
   justify-content: center;
 }
 .section-title {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 70px;
+  font-weight: 500;
   margin: 36px 0px;
+  font-family: 'LeviReBrushed';
+}
+
+@media only screen and (max-width: 720px) {
+  .section-title {
+    font-size: 30px;
+  }
 }

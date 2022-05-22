@@ -5,17 +5,17 @@ function WebHeader(props) {
     <div className="web">
       <div className="web-option">
         <a href="#projects" className="hover-underline-animation">
-          <i className="fi fi-br-keyboard option-icon"></i>Projects
+          Projects
         </a>
       </div>
       <div className="web-option">
         <a href="#skills" className="hover-underline-animation">
-          <i className="fi fi-br-dashboard option-icon"></i>Skills
+          Skills
         </a>
       </div>
       <div className="web-option">
         <a href="#contact" className="hover-underline-animation">
-          <i className="fi fi-br-portrait option-icon"></i>Contact
+          Contact
         </a>
       </div>
     </div>

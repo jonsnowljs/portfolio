@@ -47,7 +47,7 @@ function Header() {
     set([]);
     ref.current.push(setTimeout(() => set(['Lu', ' Jia', ' Sheng']), 2000));
     ref.current.push(setTimeout(() => set(['L', 'J', 'S']), 5000));
-    ref.current.push(setTimeout(() => set(['L', '.', 'JS']), 8000));
+    ref.current.push(setTimeout(() => set(['L', '. ', 'JS']), 8000));
   }, []);
 
   useEffect(() => {

@@ -5,9 +5,10 @@
 }
 
 .web-option {
-  font-size: 25px;
-  margin-right: 16px;
-  font-weight: 700;
+  font-size: 35px;
+  margin-right: 40px;
+  font-weight: 300;
+  font-family: "LeviReBrushed";
 }
 
 .web-option a {

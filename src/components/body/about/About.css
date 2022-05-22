@@ -1,10 +1,15 @@
 @font-face {
   font-family: 'LeviReBrushed';
-  src: local('LeviReBrushed'), url(../../../fonts/LeviReBrushed.ttf) format(truetype);
+  src: url(../../../fonts/LeviReBrushed.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url(../../../fonts/Pacifico.ttf) format('truetype');
 }
 @font-face {
   font-family: 'BrushKing';
-  src: local('BrushKing'), url(../../../fonts/Brush\ King.otf) format(opentype);
+  src: local('BrushKing'),
+    url(../../../fonts/Brush\ King.otf) format('opentype');
 }
 .about {
   padding-bottom: 48px;
@@ -24,14 +29,25 @@
   height: 420px;
 }
 .about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 60px;
   width: 600px;
 }
 .info-name {
-  color: #0043d4;
+  color: black;
   font-weight: 900;
-  font-style: LeviReBrushed;
+  font-size: 100px;
+  font-family: 'LeviReBrushed';
 }
+.info-desc {
+  color: black;
+  font-weight: 300;
+  font-size: 40px;
+  font-family: 'Pacifico';
+}
+
 .about-photo {
   width: 600px;
   height: 500px;
@@ -60,9 +76,14 @@
   }
   .about-info {
     font-size: 40px;
+    flex-direction: column;
+    align-items: center;
   }
   .info-name {
-    font-size: 26px;
+    font-size: 70px;
+  }
+  .info-desc {
+    font-size: 25px;
   }
 }
 
@@ -92,7 +113,6 @@
     font-size: 18px;
   }
   .info-name {
-    font-size: 26px;
+    font-size: 50px;
   }
 }
-
