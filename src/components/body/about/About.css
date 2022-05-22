@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'LeviReBrushed';
+  src: local('LeviReBrushed'), url(../../../fonts/LeviReBrushed.ttf) format(truetype);
+}
+@font-face {
+  font-family: 'BrushKing';
+  src: local('BrushKing'), url(../../../fonts/Brush\ King.otf) format(opentype);
+}
 .about {
   padding-bottom: 48px;
   display: flex;
@@ -22,7 +30,7 @@
 .info-name {
   color: #0043d4;
   font-weight: 900;
-  font-style: italic;
+  font-style: LeviReBrushed;
 }
 .about-photo {
   width: 600px;
@@ -87,3 +95,4 @@
     font-size: 26px;
   }
 }
+

@@ -38,12 +38,12 @@ function Home() {
           minHeight: 200.0,
           minWidth: 200.0,
           highlightColor: 0xa5a5b1,
-          midtoneColor: 0x3160e,
-          lowlightColor: 0x3cff,
+          midtoneColor: 0x1f2828,
+          lowlightColor: 0x26648e,
           baseColor: 0xffffff,
-          blurFactor: 0.51,
-          speed: 0.6,
-          zoom: 1.8,
+          blurFactor: 0.24,
+          speed: 0.2,
+          zoom: 3.0,
         })
       );
     }
