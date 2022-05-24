@@ -7,5 +7,7 @@
   "latestBlogPostsReference": "latestBlogPosts",
   "pageTitle": "Jiasheng Lu",
   "pageDescription": "Hey, this is my personal website. You can take a look at my portfolio, download my resume and see how you can contact me!",
-  "metaImageAlt": "The image contains the logo of this website.."
+  "metaImageAlt": "Jiasheng Lu's Portfolio Website",
+  "imageUrl": "./thumbnail.png"
+  
 }

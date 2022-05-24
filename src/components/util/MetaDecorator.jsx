@@ -7,10 +7,10 @@ const MetaDecorator = ({ title, description, imageUrl, imageAlt }) => (
   <Helmet>
     <title>{title}</title>
     <meta property="og:title" content={title} />
-    <meta name="description" content={description} />
+
     <meta property="og:description" content={description} />
     {/* TODO add hostname and revise metaDecorator.js data*/}
-    <meta property="og:image" content={metaDecorator.hostname + imageUrl} />
+    <meta property="og:image" content={imageUrl} />
     <meta
       property="og:url"
       content={

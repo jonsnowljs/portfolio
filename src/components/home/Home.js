@@ -56,9 +56,9 @@ function Home() {
   return (
     <div className="home" ref={vantaRef}>
       <MetaDecorator
-        description={content}
+        description={content.pageDescription}
         title={content.pageTitle}
-        imageUrl={metaThumbnail}
+        imageUrl={content.imageUrl}
         imageAlt={content.metaImageAlt}
       />
       {/* <NavigationBar/> */}
