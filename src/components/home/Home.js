@@ -7,7 +7,7 @@ import Skill from '../body/skills/Skill';
 import Contact from '../body/contact/Contact';
 import Projects from '../body/projects/Projects';
 import Title from '../common/title/Title';
-import MetaDecorator from 'components/util/MetaDecorator';
+// import MetaDecorator from 'components/util/MetaDecorator';
 import metaThumbnail from '../../assets/img/avatar.svg';
 import Particles from 'react-tsparticles';
 import particlesOptions from '../../assets/data/particles.json';
@@ -55,12 +55,12 @@ function Home() {
 
   return (
     <div className="home" ref={vantaRef}>
-      <MetaDecorator
+      {/* <MetaDecorator
         description={content.pageDescription}
         title={content.pageTitle}
         imageUrl={content.imageUrl}
         imageAlt={content.metaImageAlt}
-      />
+      /> */}
       {/* <NavigationBar/> */}
       {/* load the praticles config from practicles.json */}
       {/* <Particles
