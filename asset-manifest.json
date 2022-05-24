@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.74539311.css",
-    "main.js": "/portfolio/static/js/main.3ade21a5.js",
+    "main.js": "/portfolio/static/js/main.81a9555f.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Brush King.otf": "/portfolio/static/media/Brush King.2f728ef96b53cab323f4.otf",
@@ -19,8 +19,8 @@
     "static/media/react.svg": "/portfolio/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg",
     "static/media/python.svg": "/portfolio/static/media/python.849d0b2b5f1ec20f077dd267498bd536.svg",
     "static/media/github.svg": "/portfolio/static/media/github.3c903c66b2c5334c8c0b80567c4ea422.svg",
-    "static/media/azure.svg": "/portfolio/static/media/azure.d8c693b62a434719420e95f8c65f3acd.svg",
     "index.html": "/portfolio/index.html",
+    "static/media/azure.svg": "/portfolio/static/media/azure.d8c693b62a434719420e95f8c65f3acd.svg",
     "static/media/java.svg": "/portfolio/static/media/java.a751bad6c81431ab4dd6fa6632a65540.svg",
     "static/media/nodejs.svg": "/portfolio/static/media/nodejs.ad2a9a8806d9bdbd287fb34b1eebd956.svg",
     "static/media/oraclesql.svg": "/portfolio/static/media/oraclesql.21a46ccd5ceb6379d6bc726cf65a756a.svg",
@@ -37,12 +37,12 @@
     "static/media/firebase.svg": "/portfolio/static/media/firebase.0d5ec3e60614ea8e4d7abbf0729e969b.svg",
     "static/media/materialui.svg": "/portfolio/static/media/materialui.7761422447c0e90181f76745ea89ab03.svg",
     "main.74539311.css.map": "/portfolio/static/css/main.74539311.css.map",
-    "main.3ade21a5.js.map": "/portfolio/static/js/main.3ade21a5.js.map",
+    "main.81a9555f.js.map": "/portfolio/static/js/main.81a9555f.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74539311.css",
-    "static/js/main.3ade21a5.js"
+    "static/js/main.81a9555f.js"
   ]
 }
