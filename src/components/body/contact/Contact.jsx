@@ -16,7 +16,10 @@ function Contact() {
           <div className="download">
             {/* TODO update resume pdf*/}
 
-            <a download href="../../../assets/resume1.pdf">
+            <a
+              download
+              href="https://github.com/jonsnowljs/portfolio/blob/master/src/assets/data/resume1.pdf?raw=true"
+            >
               <Button
                 variant="contained"
                 color="info"
