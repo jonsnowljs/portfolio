@@ -1,0 +1,71 @@
+export const skillCategories = [
+  {
+    id: 'frontend',
+    label: 'Frontend',
+    color: '#a855f7',
+    icon: '⚡',
+    skills: [
+      { name: 'React', level: 95, color: '#61dafb' },
+      { name: 'TypeScript', level: 85, color: '#3178c6' },
+      { name: 'JavaScript', level: 92, color: '#f7df1e' },
+      { name: 'Next.js', level: 80, color: '#ffffff' },
+      { name: 'Redux', level: 85, color: '#764abc' },
+      { name: 'Tailwind CSS', level: 88, color: '#38bdf8' },
+      { name: 'Framer Motion', level: 78, color: '#ff0055' },
+      { name: 'Material UI', level: 82, color: '#007fff' },
+      { name: 'HTML / CSS / Sass', level: 95, color: '#e34f26' },
+    ],
+  },
+  {
+    id: 'backend',
+    label: 'Backend',
+    color: '#22d3ee',
+    icon: '🔧',
+    skills: [
+      { name: 'Node.js', level: 88, color: '#68a063' },
+      { name: 'Express.js', level: 85, color: '#ffffff' },
+      { name: 'GraphQL', level: 75, color: '#e535ab' },
+      { name: 'Java', level: 78, color: '#ed8b00' },
+      { name: 'C#', level: 70, color: '#9b4993' },
+      { name: 'Python', level: 68, color: '#3776ab' },
+      { name: 'REST APIs', level: 90, color: '#25d366' },
+    ],
+  },
+  {
+    id: 'database',
+    label: 'Database & Cloud',
+    color: '#f43f5e',
+    icon: '☁️',
+    skills: [
+      { name: 'MongoDB', level: 85, color: '#47a248' },
+      { name: 'MySQL', level: 80, color: '#4479a1' },
+      { name: 'Oracle SQL', level: 72, color: '#f80000' },
+      { name: 'Firebase', level: 75, color: '#ffca28' },
+      { name: 'Azure', level: 70, color: '#0078d4' },
+      { name: 'Heroku', level: 78, color: '#430098' },
+      { name: 'Vercel', level: 88, color: '#ffffff' },
+    ],
+  },
+  {
+    id: 'tools',
+    label: 'Tools & Testing',
+    color: '#fb923c',
+    icon: '🛠',
+    skills: [
+      { name: 'Git / GitHub', level: 92, color: '#f05032' },
+      { name: 'Jest', level: 82, color: '#c21325' },
+      { name: 'Cypress', level: 75, color: '#69d3a7' },
+      { name: 'GitHub Actions', level: 72, color: '#2088ff' },
+      { name: 'Jira', level: 80, color: '#0052cc' },
+      { name: 'Apollo', level: 75, color: '#311c87' },
+      { name: 'React Query', level: 78, color: '#ff4154' },
+    ],
+  },
+];
+
+export const stats = [
+  { value: '4+', label: 'Years of coding', description: 'Building web applications' },
+  { value: '10+', label: 'Projects shipped', description: 'From concept to production' },
+  { value: '20+', label: 'Technologies', description: 'Across the full stack' },
+  { value: '∞', label: 'Lines of code', description: 'Written with passion' },
+];
