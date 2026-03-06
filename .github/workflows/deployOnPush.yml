@@ -3,10 +3,19 @@ on:
   push:
     branches:
       - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   gh-pages-deploy:
     name: Deploying to gh-pages
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4
@@ -16,7 +25,7 @@ jobs:
         with:
           version: 8
 
-      - name: Setup Node.js for use with actions
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
@@ -25,5 +34,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run deploy script
-        run: pnpm run deploy
+      - name: Build
+        run: pnpm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
