@@ -1,65 +1,26 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
-  "homepage": "https://jonsnowljs.github.io/portfolio",
+  "version": "2.0.0",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mui/icons-material": "^5.4.1",
-    "@mui/material": "^5.4.1",
-    "@react-spring/web": "^9.4.4",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "framer-motion": "^6.2.6",
-    "hamburger-react": "^2.4.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.3.1",
-    "react-notion": "^0.10.0",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "5.0.0",
-    "react-scroll": "^1.8.5",
-    "react-spring": "^9.4.4",
-    "react-tsparticles": "^1.41.4",
-    "react-typist": "^2.0.5",
-    "react-useanimations": "^2.0.8",
-    "react-vertical-timeline-component": "^3.5.2",
-    "react-webtech-animated-icons": "^1.0.7",
-    "sass": "^1.49.8",
-    "twin.macro": "^2.8.2",
-    "vanta": "^0.5.22",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "framer-motion": "^11.3.0",
+    "react-icons": "^5.2.1",
+    "clsx": "^2.1.1"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "tailwindcss": "^3.4.6",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5"
   }
 }
