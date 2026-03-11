@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { FiGithub, FiExternalLink, FiArrowUpRight } from 'react-icons/fi';
 import { projects } from '@/data/projects';
+import { WordReveal } from '@/components/SectionReveal';
 
 function ProjectCard({ project, index }) {
   const cardRef = useRef(null);
@@ -190,7 +191,7 @@ export default function Projects() {
         <div>
           <div className="section-label mb-3">// projects</div>
           <h2 className="text-4xl sm:text-5xl font-black text-white">
-            Things I&apos;ve{' '}
+            <WordReveal text="Things I've" />{' '}
             <span className="gradient-text">built</span>
           </h2>
           <p className="text-slate-400 mt-3 max-w-xl">

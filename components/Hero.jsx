@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail, FiArrowDown, FiDownload } from 'react-icons/fi';
+import MagneticButton from '@/components/MagneticButton';
 
 const roles = [
   'Full Stack Developer',
@@ -203,24 +204,28 @@ export default function Hero() {
           variants={itemVariants}
           className="flex flex-wrap items-center justify-center gap-4 mb-14"
         >
-          <a href="#projects" className="btn-primary group">
-            <span>View My Work</span>
-            <motion.span
-              animate={{ x: [0, 4, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
+          <MagneticButton strength={0.3}>
+            <a href="#projects" className="btn-primary group">
+              <span>View My Work</span>
+              <motion.span
+                animate={{ x: [0, 4, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+              >
+                →
+              </motion.span>
+            </a>
+          </MagneticButton>
+          <MagneticButton strength={0.3}>
+            <a
+              href="https://github.com/jonsnowljs/portfolio/raw/master/src/assets/data/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
             >
-              →
-            </motion.span>
-          </a>
-          <a
-            href="https://github.com/jonsnowljs/portfolio/raw/master/src/assets/data/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-ghost"
-          >
-            <FiDownload size={16} />
-            Resume
-          </a>
+              <FiDownload size={16} />
+              Resume
+            </a>
+          </MagneticButton>
         </motion.div>
 
         {/* Social Links */}
