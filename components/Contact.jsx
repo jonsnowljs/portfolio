@@ -4,6 +4,8 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail, FiArrowUpRight, FiDownload } from 'react-icons/fi';
 import { socialLinks, resumeUrl } from '@/data/social';
+import { WordReveal } from '@/components/SectionReveal';
+import MagneticButton from '@/components/MagneticButton';
 
 const iconMap = {
   GitHub: FiGithub,
@@ -43,9 +45,9 @@ export default function Contact() {
           variants={itemVariants}
           className="text-4xl sm:text-6xl font-black text-white mb-6 leading-tight"
         >
-          Let&apos;s build something
+          <WordReveal text="Let's build something" />
           <br />
-          <span className="gradient-text">great together.</span>
+          <WordReveal text="great together." wordClassName="gradient-text" delayOffset={0.24} />
         </motion.h2>
 
         {/* Subtext */}
@@ -56,24 +58,28 @@ export default function Contact() {
 
         {/* Primary CTA */}
         <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-4 mb-16">
-          <a
-            href="mailto:jiasheng.lu@edu.sait.ca"
-            className="btn-primary text-base px-10 py-4"
-          >
-            <span className="flex items-center gap-2">
-              <FiMail size={18} />
-              Say Hello
-            </span>
-          </a>
-          <a
-            href={resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-ghost text-base px-8 py-4"
-          >
-            <FiDownload size={16} />
-            Download Resume
-          </a>
+          <MagneticButton strength={0.25}>
+            <a
+              href="mailto:jiasheng.lu@edu.sait.ca"
+              className="btn-primary text-base px-10 py-4"
+            >
+              <span className="flex items-center gap-2">
+                <FiMail size={18} />
+                Say Hello
+              </span>
+            </a>
+          </MagneticButton>
+          <MagneticButton strength={0.25}>
+            <a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost text-base px-8 py-4"
+            >
+              <FiDownload size={16} />
+              Download Resume
+            </a>
+          </MagneticButton>
         </motion.div>
 
         {/* Social Cards */}
@@ -90,7 +96,7 @@ export default function Contact() {
                 whileHover={{ y: -4, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.25 }}
-                className="group glass-card rounded-2xl p-6 flex flex-col items-center gap-3 border border-white/06 hover:border-violet-500/30"
+                className="group glass-card-glow rounded-2xl p-6 flex flex-col items-center gap-3"
               >
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"

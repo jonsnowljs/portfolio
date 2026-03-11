@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FiCode, FiCoffee, FiZap, FiMapPin, FiCalendar, FiAward } from 'react-icons/fi';
 import { stats } from '@/data/skills';
+import { WordReveal } from '@/components/SectionReveal';
 
 const bentoCards = [
   {
@@ -187,8 +188,8 @@ export default function About() {
       >
         <div className="section-label mb-3">// about</div>
         <h2 className="text-4xl sm:text-5xl font-black text-white">
-          The person behind the{' '}
-          <span className="gradient-text">code</span>
+          <WordReveal text="The person behind the" />{' '}
+          <WordReveal text="code" wordClassName="gradient-text" delayOffset={0.32} />
         </h2>
       </motion.div>
 
@@ -203,7 +204,8 @@ export default function About() {
           <motion.div
             key={card.id}
             variants={cardVariants}
-            className={`glass-card rounded-2xl p-6 ${card.col || ''} ${card.row || ''} ${card.className || ''}`}
+            whileHover={{ y: -4, transition: { duration: 0.3 } }}
+            className={`glass-card-glow rounded-2xl p-6 ${card.col || ''} ${card.row || ''} ${card.className || ''}`}
           >
             {card.content}
           </motion.div>

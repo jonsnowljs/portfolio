@@ -3,6 +3,7 @@
 import { useState, useRef } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { skillCategories } from '@/data/skills';
+import { WordReveal } from '@/components/SectionReveal';
 
 function SkillBar({ skill, index, accentColor }) {
   const barRef = useRef(null);
@@ -55,7 +56,8 @@ export default function Skills() {
       >
         <div className="section-label mb-3">// skills</div>
         <h2 className="text-4xl sm:text-5xl font-black text-white">
-          My <span className="gradient-text">toolkit</span>
+          <WordReveal text="My" />{' '}
+          <WordReveal text="toolkit" wordClassName="gradient-text" delayOffset={0.08} />
         </h2>
         <p className="text-slate-400 mt-3 max-w-xl mx-auto">
           A diverse set of tools and technologies I use to bring ideas to life.
