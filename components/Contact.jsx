@@ -47,7 +47,7 @@ export default function Contact() {
         >
           <WordReveal text="Let's build something" />
           <br />
-          <span className="gradient-text">great together.</span>
+          <WordReveal text="great together." wordClassName="gradient-text" delayOffset={0.24} />
         </motion.h2>
 
         {/* Subtext */}

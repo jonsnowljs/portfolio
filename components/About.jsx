@@ -189,7 +189,7 @@ export default function About() {
         <div className="section-label mb-3">// about</div>
         <h2 className="text-4xl sm:text-5xl font-black text-white">
           <WordReveal text="The person behind the" />{' '}
-          <span className="gradient-text">code</span>
+          <WordReveal text="code" wordClassName="gradient-text" delayOffset={0.32} />
         </h2>
       </motion.div>
 

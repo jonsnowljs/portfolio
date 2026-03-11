@@ -35,7 +35,7 @@ export default function SectionReveal({ children, className = '', width = 'fit-c
   );
 }
 
-export function WordReveal({ text, className = '', highlightWord, highlightClass = 'gradient-text' }) {
+export function WordReveal({ text, className = '', wordClassName = '', highlightWord, highlightClass = 'gradient-text', delayOffset = 0 }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-60px' });
 
@@ -46,12 +46,12 @@ export function WordReveal({ text, className = '', highlightWord, highlightClass
       {words.map((word, i) => (
         <span key={i} className="inline-block overflow-hidden" style={{ marginRight: '0.3em' }}>
           <motion.span
-            className={`inline-block ${word === highlightWord ? highlightClass : ''}`}
+            className={`inline-block ${wordClassName} ${word === highlightWord ? highlightClass : ''}`}
             initial={{ y: '100%', opacity: 0 }}
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{
               duration: 0.5,
-              delay: i * 0.08,
+              delay: delayOffset + i * 0.08,
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
           >
