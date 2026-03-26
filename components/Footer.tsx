@@ -8,28 +8,25 @@ const iconMap = {
 };
 
 const navLinks = [
-  { label: "About", href: "#about" },
+  { label: "About",    href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  { label: "Skills",   href: "#skills" },
+  { label: "Contact",  href: "#contact" },
 ];
 
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-card/50">
+    <footer className="border-t border-border bg-card/40">
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
           {/* Logo */}
-          <a
-            href="#"
-            className="flex items-center gap-2 font-mono text-sm font-semibold text-foreground"
-          >
-            <span className="flex h-7 w-7 items-center justify-center rounded-md bg-violet-600 text-white text-xs font-bold">
+          <a href="#" className="flex items-center gap-2 font-mono text-sm font-semibold text-foreground">
+            <span className="flex h-6 w-6 items-center justify-center rounded border border-border bg-foreground text-background text-[10px] font-bold">
               JL
             </span>
-            <span className="gradient-text">Jiasheng Lu</span>
+            Jiasheng Lu
           </a>
 
           {/* Nav */}
@@ -46,7 +43,7 @@ export function Footer() {
           </nav>
 
           {/* Socials */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-0.5">
             {socialLinks.map((link) => {
               const Icon = iconMap[link.icon as keyof typeof iconMap];
               return (
@@ -58,7 +55,7 @@ export function Footer() {
                   aria-label={link.platform}
                   className="flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground hover:bg-muted"
                 >
-                  {Icon && <Icon size={15} />}
+                  {Icon && <Icon size={14} />}
                 </a>
               );
             })}
@@ -67,9 +64,7 @@ export function Footer() {
 
         <div className="mt-8 border-t border-border pt-6 text-center">
           <p className="text-xs text-muted-foreground">
-            © {year} Jiasheng Lu. Built with{" "}
-            <span className="text-violet-500">Next.js</span> &amp;{" "}
-            <span className="text-cyan-500">Tailwind CSS</span>.
+            © {year} Jiasheng Lu. Built with Next.js &amp; Tailwind CSS.
           </p>
         </div>
       </div>

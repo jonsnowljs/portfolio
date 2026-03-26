@@ -6,8 +6,8 @@ import { skillCategories } from "@/data/skills";
 import { clsx } from "clsx";
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 16 },
-  show: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 12 },
+  show:   { opacity: 1, y: 0 },
 };
 
 export function Skills() {
@@ -19,12 +19,12 @@ export function Skills() {
       <div className="mx-auto max-w-6xl px-6">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-12 space-y-2"
         >
-          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-violet-500">
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             Expertise
           </p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -32,7 +32,7 @@ export function Skills() {
           </h2>
         </motion.div>
 
-        <div className="grid gap-8 lg:grid-cols-[220px_1fr]">
+        <div className="grid gap-8 lg:grid-cols-[200px_1fr]">
           {/* Category sidebar */}
           <nav className="flex gap-1 lg:flex-col">
             {skillCategories.map((cat) => (
@@ -40,9 +40,9 @@ export function Skills() {
                 key={cat.id}
                 onClick={() => setActive(cat.id)}
                 className={clsx(
-                  "rounded-lg px-4 py-2.5 text-left text-sm font-medium transition-all",
+                  "rounded-lg px-4 py-2 text-left text-sm font-medium transition-all",
                   active === cat.id
-                    ? "bg-violet-600 text-white shadow-sm shadow-violet-500/20"
+                    ? "bg-primary text-primary-foreground"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >
@@ -63,16 +63,14 @@ export function Skills() {
               <motion.div key={skill.name} variants={fadeUp} className="space-y-1.5">
                 <div className="flex items-center justify-between text-sm">
                   <span className="font-medium text-foreground">{skill.name}</span>
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {skill.level}%
-                  </span>
+                  <span className="font-mono text-xs text-muted-foreground">{skill.level}%</span>
                 </div>
-                <div className="h-1.5 w-full rounded-full bg-muted overflow-hidden">
+                <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: `${skill.level}%` }}
-                    transition={{ duration: 0.7, ease: "easeOut" }}
-                    className="h-full rounded-full bg-gradient-to-r from-violet-500 to-cyan-500"
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    className="h-full rounded-full bg-foreground/80"
                   />
                 </div>
               </motion.div>
