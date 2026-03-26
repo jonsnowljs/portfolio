@@ -34,20 +34,20 @@ export function Navbar() {
           : "bg-transparent"
       )}
     >
-      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+      <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
         {/* Logo */}
         <a
           href="#"
           className="flex items-center gap-2 font-mono text-sm font-semibold text-foreground"
         >
-          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-violet-600 text-white text-xs font-bold">
+          <span className="flex h-6 w-6 items-center justify-center rounded border border-border bg-foreground text-background text-[10px] font-bold">
             JL
           </span>
-          <span className="hidden sm:inline gradient-text">jiasheng.lu</span>
+          <span className="hidden sm:inline text-foreground">jiasheng.lu</span>
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-1">
+        <ul className="hidden md:flex items-center gap-0.5">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
@@ -62,32 +62,29 @@ export function Navbar() {
 
         {/* Right controls */}
         <div className="flex items-center gap-2">
-          {/* Theme toggle */}
           {mounted && (
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="flex h-8 w-8 items-center justify-center rounded-md border border-border bg-card text-muted-foreground transition-colors hover:text-foreground hover:bg-muted"
               aria-label="Toggle theme"
             >
-              {theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}
+              {theme === "dark" ? <Sun size={14} /> : <Moon size={14} />}
             </button>
           )}
 
-          {/* Hire me */}
           <a
             href="mailto:jiasheng.lu@edu.sait.ca"
-            className="hidden md:inline-flex items-center gap-1.5 rounded-md bg-violet-600 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-violet-700"
+            className="hidden md:inline-flex items-center gap-1.5 rounded-md border border-border bg-primary px-4 py-1.5 text-sm font-medium text-primary-foreground transition-colors hover:opacity-90"
           >
             Hire Me
           </a>
 
-          {/* Mobile menu button */}
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden flex h-8 w-8 items-center justify-center rounded-md border border-border text-muted-foreground hover:text-foreground"
             aria-label="Toggle menu"
           >
-            {open ? <X size={16} /> : <Menu size={16} />}
+            {open ? <X size={15} /> : <Menu size={15} />}
           </button>
         </div>
       </nav>
@@ -107,7 +104,7 @@ export function Navbar() {
           ))}
           <a
             href="mailto:jiasheng.lu@edu.sait.ca"
-            className="mt-2 inline-flex items-center justify-center rounded-md bg-violet-600 px-4 py-2 text-sm font-medium text-white"
+            className="mt-2 inline-flex items-center justify-center rounded-md border border-border bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
           >
             Hire Me
           </a>

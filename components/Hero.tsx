@@ -13,77 +13,73 @@ const roles = [
 ];
 
 const codeLines = [
-  { text: "const jiasheng = {", indent: 0 },
-  { text: '  role: "Full Stack Developer",', indent: 0 },
-  { text: '  location: "Calgary, Canada",', indent: 0 },
-  { text: "  loves: [", indent: 0 },
-  { text: '    "clean code",', indent: 0 },
-  { text: '    "great UX",', indent: 0 },
-  { text: '    "solving hard problems",', indent: 0 },
-  { text: "  ],", indent: 0 },
-  { text: "  available: true,", indent: 0 },
-  { text: "}", indent: 0 },
+  { key: "open",    raw: "const jiasheng = {" },
+  { key: "role",    raw: '  role: "Full Stack Developer",' },
+  { key: "loc",     raw: '  location: "Calgary, Canada",' },
+  { key: "arr",     raw: "  loves: [" },
+  { key: "l1",      raw: '    "clean code",' },
+  { key: "l2",      raw: '    "great UX",' },
+  { key: "l3",      raw: '    "hard problems",' },
+  { key: "close2",  raw: "  ]," },
+  { key: "avail",   raw: "  available: true," },
+  { key: "close",   raw: "}" },
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/jonsnowljs", label: "GitHub" },
-  {
-    icon: Linkedin,
-    href: "https://www.linkedin.com/in/jiashenglujob",
-    label: "LinkedIn",
-  },
-  { icon: Mail, href: "mailto:jiasheng.lu@edu.sait.ca", label: "Email" },
+  { icon: Github,   href: "https://github.com/jonsnowljs",              label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/jiashenglujob", label: "LinkedIn" },
+  { icon: Mail,     href: "mailto:jiasheng.lu@edu.sait.ca",            label: "Email" },
 ];
 
 export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setRoleIndex((i) => (i + 1) % roles.length);
-    }, 2800);
-    return () => clearInterval(interval);
+    const t = setInterval(() => setRoleIndex((i) => (i + 1) % roles.length), 2800);
+    return () => clearInterval(t);
   }, []);
 
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
-      {/* Grid background */}
+      {/* Subtle grid */}
       <div className="absolute inset-0 grid-bg" />
 
-      {/* Radial glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,theme(colors.violet.500/15),transparent)]" />
+      {/* Radial fade at top */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_40%_at_50%_0%,hsl(var(--muted)/60%),transparent)]" />
 
-      <div className="relative mx-auto w-full max-w-6xl px-6 pt-24 pb-16">
+      <div className="relative mx-auto w-full max-w-6xl px-6 pt-24 pb-20">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+
           {/* Left — copy */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             className="flex flex-col gap-6"
           >
-            {/* Badge */}
-            <span className="inline-flex w-fit items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
-              <span className="h-1.5 w-1.5 rounded-full bg-violet-400 animate-pulse" />
+            {/* Status badge */}
+            <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
+              <span className="h-1.5 w-1.5 rounded-full bg-foreground/60 animate-pulse" />
               Available for work
             </span>
 
             {/* Heading */}
             <div className="space-y-2">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl leading-[1.1]">
                 Hi, I&apos;m{" "}
                 <span className="gradient-text">Jiasheng Lu</span>
               </h1>
-              <div className="flex items-center gap-2 text-xl text-muted-foreground sm:text-2xl">
-                <motion.span
+              <div className="h-8 overflow-hidden">
+                <motion.p
                   key={roleIndex}
-                  initial={{ opacity: 0, y: 8 }}
+                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
+                  exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
+                  className="text-xl text-muted-foreground"
                 >
                   {roles[roleIndex]}
-                </motion.span>
+                </motion.p>
               </div>
             </div>
 
@@ -98,24 +94,24 @@ export function Hero() {
             <div className="flex flex-wrap items-center gap-3">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-violet-700 hover:shadow-lg hover:shadow-violet-500/20"
+                className="inline-flex items-center gap-2 rounded-md border border-border bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
                 View My Work
-                <ArrowRight size={15} />
+                <ArrowRight size={14} />
               </a>
               <a
                 href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-all hover:border-violet-500/40 hover:bg-muted"
+                className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
               >
-                <Download size={15} />
+                <Download size={14} />
                 Resume
               </a>
             </div>
 
             {/* Social */}
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-0.5">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
@@ -123,9 +119,9 @@ export function Hero() {
                   target={href.startsWith("mailto") ? undefined : "_blank"}
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground hover:bg-muted"
+                  className="flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground hover:bg-muted"
                 >
-                  <Icon size={18} />
+                  <Icon size={16} />
                 </a>
               ))}
             </div>
@@ -133,62 +129,35 @@ export function Hero() {
 
           {/* Right — code card */}
           <motion.div
-            initial={{ opacity: 0, x: 24 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
             className="hidden lg:block"
           >
-            <div className="rounded-xl border border-border bg-card overflow-hidden shadow-2xl shadow-black/20">
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-xl shadow-black/10 dark:shadow-black/40">
               {/* Window chrome */}
-              <div className="flex items-center gap-1.5 border-b border-border bg-muted/50 px-4 py-3">
-                <span className="h-2.5 w-2.5 rounded-full bg-red-500/70" />
-                <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/70" />
-                <span className="h-2.5 w-2.5 rounded-full bg-green-500/70" />
+              <div className="flex items-center gap-1.5 border-b border-border bg-muted/60 px-4 py-3">
+                <span className="h-2.5 w-2.5 rounded-full bg-border" />
+                <span className="h-2.5 w-2.5 rounded-full bg-border" />
+                <span className="h-2.5 w-2.5 rounded-full bg-border" />
                 <span className="ml-3 font-mono text-xs text-muted-foreground">
                   jiasheng.ts
                 </span>
               </div>
-              {/* Code */}
+              {/* Code body */}
               <div className="p-5 font-mono text-sm leading-7">
                 {codeLines.map((line, i) => (
                   <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: -8 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.4 + i * 0.07 }}
+                    key={line.key}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.3 + i * 0.07 }}
                     className="flex"
                   >
-                    <span className="w-8 shrink-0 select-none text-right text-muted-foreground/40 text-xs leading-7 mr-4">
+                    <span className="w-7 shrink-0 select-none text-right text-xs text-muted-foreground/40 leading-7 mr-4">
                       {i + 1}
                     </span>
-                    <span>
-                      {line.text.startsWith("const") ? (
-                        <>
-                          <span className="text-violet-400">const </span>
-                          <span className="text-cyan-400">jiasheng</span>
-                          <span className="text-foreground"> = {"{"}</span>
-                        </>
-                      ) : line.text === "}" ? (
-                        <span className="text-foreground">{"}"}</span>
-                      ) : line.text.includes('"') ? (
-                        (() => {
-                          const m = line.text.match(/^(\s*)([\w]+)(:)(\s*)(.+)$/);
-                          if (m) {
-                            return (
-                              <>
-                                <span className="text-foreground">{m[1]}</span>
-                                <span className="text-violet-300">{m[2]}</span>
-                                <span className="text-foreground">{m[3]}{m[4]}</span>
-                                <span className="text-green-400">{m[5]}</span>
-                              </>
-                            );
-                          }
-                          return <span className="text-green-400">{line.text}</span>;
-                        })()
-                      ) : (
-                        <span className="text-foreground">{line.text}</span>
-                      )}
-                    </span>
+                    <span className="text-foreground/80">{line.raw}</span>
                   </motion.div>
                 ))}
               </div>
@@ -201,12 +170,14 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5"
         >
-          <span className="text-xs text-muted-foreground">scroll</span>
+          <span className="font-mono text-[10px] text-muted-foreground/60 tracking-widest uppercase">
+            scroll
+          </span>
           <motion.div
-            animate={{ y: [0, 6, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
+            animate={{ y: [0, 5, 0] }}
+            transition={{ repeat: Infinity, duration: 1.6 }}
             className="h-4 w-px bg-border"
           />
         </motion.div>
