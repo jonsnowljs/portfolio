@@ -73,7 +73,7 @@ export function Navbar() {
           )}
 
           <a
-            href="mailto:jiasheng.lu@edu.sait.ca"
+            href="mailto:jiasheng.luu@gmail.com"
             className="hidden md:inline-flex items-center gap-1.5 rounded-md border border-border bg-primary px-4 py-1.5 text-sm font-medium text-primary-foreground transition-colors hover:opacity-90"
           >
             Hire Me
@@ -103,7 +103,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:jiasheng.lu@edu.sait.ca"
+            href="mailto:jiasheng.luu@gmail.com"
             className="mt-2 inline-flex items-center justify-center rounded-md border border-border bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
           >
             Hire Me

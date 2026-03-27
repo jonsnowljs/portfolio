@@ -28,7 +28,7 @@ const codeLines = [
 const socialLinks = [
   { icon: Github,   href: "https://github.com/jonsnowljs",              label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/jiashenglujob", label: "LinkedIn" },
-  { icon: Mail,     href: "mailto:jiasheng.lu@edu.sait.ca",            label: "Email" },
+  { icon: Mail,     href: "mailto:jiasheng.luu@gmail.com",            label: "Email" },
 ];
 
 export function Hero() {
