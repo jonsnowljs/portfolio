@@ -20,8 +20,8 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: "Email",
-    handle: "jiasheng.lu@edu.sait.ca",
-    url: "mailto:jiasheng.lu@edu.sait.ca",
+    handle: "jiasheng.luu@gmail.com",
+    url: "mailto:jiasheng.luu@gmail.com",
     icon: "mail",
   },
 ];
@@ -29,4 +29,4 @@ export const socialLinks: SocialLink[] = [
 export const resumeUrl =
   "https://raw.githubusercontent.com/jonsnowljs/resume/main/resume.pdf";
 
-export const email = "jiasheng.lu@edu.sait.ca";
+export const email = "jiasheng.luu@gmail.com";
